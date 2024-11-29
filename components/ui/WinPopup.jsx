@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 const WinPopup = () => {
 	return (
-		<div className='fixed inset-x-0 top-[195px] xl:top-[115px]  bg-[#0A0A0A] text-white  animate-slide-up z-20 h-screen border-t border-white border-opacity-[12%]'>
-			<div className='max-w-[425px] mx-auto'>
+		<div className='fixed inset-x-0 top-[195px] xl:top-[115px] bg-[#0A0A0A] overflow-y-auto text-white  animate-slide-up z-20 h-screen  border-t border-white border-opacity-[12%]'>
+			<div className='max-w-[425px] mx-auto mb-[220px] '>
 				<Image
 					src={'/main-image-sm.svg'}
 					alt='Main Image'
