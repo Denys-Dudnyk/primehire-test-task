@@ -159,12 +159,14 @@ const GameScreen = () => {
 							</svg>
 						</div>
 
-						<div className='w-full h-full rounded-lg flex justify-center items-center shadow-lg z-[1]'>
+						<div className='w-full h-full rounded-lg flex justify-center items-center z-[1]'>
 							<Image src='/box.svg' alt='Box' width={70.56} height={53.16} />
 						</div>
 						<div
-							className='absolute z-0 w-full h-full rounded-lg flex justify-center shadow-lg'
+							className='absolute z-0 rounded-lg flex justify-center'
 							style={{
+								width: '100%',
+								height: '100%',
 								bottom: '18px',
 								right: '-1px',
 							}}
