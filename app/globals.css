@@ -1,0 +1,135 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+	outline: 4px solid green;
+} */
+
+html,
+body {
+	color: #fff;
+	background: #000000;
+}
+
+@keyframes lidOpen {
+	0% {
+		transform: translateY(0px) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-4px) rotate(0deg);
+	}
+	100% {
+		transform: translateY(-15px) rotate(-35deg);
+	}
+}
+
+.animate-lid-open {
+	animation: lidOpen 1.7s forwards;
+}
+
+@keyframes lidOpenWin {
+	0% {
+		transform: translateY(0) rotate(0deg);
+	}
+	50% {
+		transform: translateY(-4px);
+	}
+	75% {
+		transform: translateY(-6px) rotate(-5deg);
+	}
+
+	100% {
+		transform: translateY(-80px) translateX(-50px) rotate(-25deg);
+	}
+}
+
+@keyframes lidDisappear {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.animate-lid-open-win {
+	animation: lidOpenWin 2.2s cubic-bezier(0.42, 0, 0.58, 1) forwards,
+		lidDisappear 0.2s ease-in 2.2s forwards;
+}
+
+@keyframes prizeSlide {
+	0% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(-30px);
+	}
+}
+
+.animate-prize-slide {
+	animation: prizeSlide 2s ease-out 2.2s forwards;
+}
+
+@keyframes boxShake {
+	0% {
+		transform: rotate(0deg);
+	}
+	25% {
+		transform: rotate(-1deg);
+	}
+	50% {
+		transform: rotate(1deg);
+	}
+	75% {
+		transform: rotate(-1deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.animate-box-shake {
+	animation: boxShake 0.5s infinite ease-in-out;
+}
+
+@keyframes slideUp {
+	from {
+		transform: translateY(100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+.animate-slide-up {
+	animation: slideUp 1.5s ease-out;
+}
+
+@keyframes slideDown {
+	from {
+		transform: translateY(0);
+	}
+	to {
+		transform: translateY(100%);
+	}
+}
+
+.animate-slide-down {
+	animation: slideDown 1.5s ease-out;
+}
+
+@keyframes lightFade {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.8);
+	}
+}
+
+.animate-light-fade {
+	animation: lightFade 3s ease-out forwards;
+}
